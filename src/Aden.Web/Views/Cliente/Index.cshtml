@@ -1,0 +1,34 @@
+@using Aden.Web.Models.Modal
+@using Aden.Web.Models.Responsive
+@model Cliente
+@inject Aden.Business.ClienteBusiness ClienteBusiness
+@{
+    ViewData["Title"] = "Index";
+}
+<br />
+<a id="Create" data-toggle="modal" asp-action="Create" data-target="#modal-action-cliente" class="btn btn-primary">
+      Registrar Cliente
+</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Apellido Paterno</th>
+            <th>Apellido Materno</th>
+            <th>Opciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Clientes)
+        {
+            @await Component.InvokeAsync("ClienteLista", new { cliente = item })
+        }
+    </tbody>
+</table>
+@Html.Partial("_Modal", new BootstrapModel { ID = "modal-action-cliente", AreaLabeledId = "modal-action-cliente-label", Size = ModalSize.Medium })
+@section scripts
+{
+    <script src="~/js/model.js" asp-append-version="true"></script>
+}

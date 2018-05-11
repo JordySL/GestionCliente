@@ -1,0 +1,24 @@
+﻿@model Cake.Models.Cliente
+@using Cake.Web.Models.Modal
+@using Cake.Web.Models.Responsive
+<tr>
+    <td>@Model.Id</td>
+    <td>@Model.nombre </ td >
+    <td>@Model.ApellidoPaterno </ td >
+    <td>@Model.ApellidoMaterno </ td >
+    <td>
+        <a id="Edit" data-toggle="modal" asp-action="Edit" asp-route-id="@Model.Id" data-target="#modal-action-cliente"
+           class="btn btn-info">
+              Editar Cliente
+        </a>
+        <a id="Delete" data-toggle="modal" asp-action="Delete" asp-route-id="@Model.Id" data-target="#modal-action-cliente" class="btn btn-danger">
+              Eliminar Cliente
+        </a>
+    </td>
+</tr>
+
+@Html.Partial("_Modal", new BootstrapModel { ID = "modal-action-cliente", AreaLabeledId = "modal-action-cliente-label", Size = ModalSize.Medium })
+@section scripts
+{
+    <script src="~/js/model.js" asp-append-version="true"></script>
+}

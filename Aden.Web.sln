@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0D98FAB1-91E6-4454-88F7-4F9DF2788F41}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B40B1493-105A-419C-AE39-471D42897965}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Aden.Web", "src\Aden.Web\Aden.Web.xproj", "{CB3F971C-B280-4FBF-9617-8A9956B4961C}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Aden.Business", "src\Aden.Business\Aden.Business.xproj", "{6E80E038-B7F4-4D9E-B93F-4AB972FB7191}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Aden.DADapper", "src\Aden.DADapper\Aden.DADapper.xproj", "{768E8626-3469-4955-93DC-87C74EDF6C48}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Aden.Models", "src\Aden.Models\Aden.Models.xproj", "{03B09B14-B5C8-4482-9811-2F82B2AA87FA}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Aden.Repository", "src\Aden.Repository\Aden.Repository.xproj", "{A93E8FF8-D343-4143-8AFC-F3CCE0C06125}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Aden.UnitOfWork", "src\Aden.UnitOfWork\Aden.UnitOfWork.xproj", "{C2FE87DE-A1D7-47DF-929B-53B555EACDCB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CB3F971C-B280-4FBF-9617-8A9956B4961C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB3F971C-B280-4FBF-9617-8A9956B4961C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB3F971C-B280-4FBF-9617-8A9956B4961C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB3F971C-B280-4FBF-9617-8A9956B4961C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E80E038-B7F4-4D9E-B93F-4AB972FB7191}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E80E038-B7F4-4D9E-B93F-4AB972FB7191}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E80E038-B7F4-4D9E-B93F-4AB972FB7191}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E80E038-B7F4-4D9E-B93F-4AB972FB7191}.Release|Any CPU.Build.0 = Release|Any CPU
+		{768E8626-3469-4955-93DC-87C74EDF6C48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{768E8626-3469-4955-93DC-87C74EDF6C48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{768E8626-3469-4955-93DC-87C74EDF6C48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{768E8626-3469-4955-93DC-87C74EDF6C48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03B09B14-B5C8-4482-9811-2F82B2AA87FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03B09B14-B5C8-4482-9811-2F82B2AA87FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03B09B14-B5C8-4482-9811-2F82B2AA87FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03B09B14-B5C8-4482-9811-2F82B2AA87FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A93E8FF8-D343-4143-8AFC-F3CCE0C06125}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A93E8FF8-D343-4143-8AFC-F3CCE0C06125}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A93E8FF8-D343-4143-8AFC-F3CCE0C06125}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A93E8FF8-D343-4143-8AFC-F3CCE0C06125}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2FE87DE-A1D7-47DF-929B-53B555EACDCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2FE87DE-A1D7-47DF-929B-53B555EACDCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2FE87DE-A1D7-47DF-929B-53B555EACDCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2FE87DE-A1D7-47DF-929B-53B555EACDCB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CB3F971C-B280-4FBF-9617-8A9956B4961C} = {0D98FAB1-91E6-4454-88F7-4F9DF2788F41}
+		{6E80E038-B7F4-4D9E-B93F-4AB972FB7191} = {0D98FAB1-91E6-4454-88F7-4F9DF2788F41}
+		{768E8626-3469-4955-93DC-87C74EDF6C48} = {0D98FAB1-91E6-4454-88F7-4F9DF2788F41}
+		{03B09B14-B5C8-4482-9811-2F82B2AA87FA} = {0D98FAB1-91E6-4454-88F7-4F9DF2788F41}
+		{A93E8FF8-D343-4143-8AFC-F3CCE0C06125} = {0D98FAB1-91E6-4454-88F7-4F9DF2788F41}
+		{C2FE87DE-A1D7-47DF-929B-53B555EACDCB} = {0D98FAB1-91E6-4454-88F7-4F9DF2788F41}
+	EndGlobalSection
+EndGlobal

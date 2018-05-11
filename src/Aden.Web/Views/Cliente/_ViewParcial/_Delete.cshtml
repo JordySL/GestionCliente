@@ -1,0 +1,15 @@
+﻿@model Cake.Models.Cliente
+@using Cake.Web.Models.Modal
+
+@using (Html.BeginForm())
+{
+    @Html.Partial("_ModalHeader", new ModalHeader { Heading = "Delete Cliente" })
+
+    <div class="modal-body form-horizontal">
+        Desea eliminar a este cliente:<br />
+        @Model.nombre<br />
+        @Model.ApellidoPaterno<br />
+        @Model.ApellidoMaterno
+    </div>
+    @Html.Partial("_ModalFooter", new ModalFooter { SubmitButtonText = "Delete" })
+}
